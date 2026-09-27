@@ -72,26 +72,11 @@
       transform: translateY(-2px);
       box-shadow: 0 16px 28px rgba(77, 51, 38, 0.08);
     }
-    .card-icon {
+    .logo {
+      width: 56px;
+      height: 56px;
       flex-shrink: 0;
-      width: 64px;
-      height: 64px;
-      border-radius: 16px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-    }
-    .card-icon svg {
-      width: 100%;
-      height: 100%;
       display: block;
-    }
-    .instagram .card-icon {
-      background: linear-gradient(135deg, #feda75, #d62976, #4f5bd5);
-    }
-    .note .card-icon {
-      background: #111111;
     }
     .card-copy {
       flex: 1;
@@ -112,9 +97,9 @@
       .link-card {
         align-items: flex-start;
       }
-      .card-icon {
-        width: 52px;
-        height: 52px;
+      .logo {
+        width: 48px;
+        height: 48px;
       }
     }
   </style>
@@ -132,40 +117,19 @@
       <p class="lead">日々の気づきや、キャリアに向き合うヒントを発信しています。<br>Instagramでは日常の気づきを、noteでは少し深めの内容をお届けしています。</p>
 
       <div class="link-grid">
-        <a class="link-card instagram" href="https://www.instagram.com/ritsuko_8837/" target="_blank" rel="noopener noreferrer">
-          <div class="card-icon" aria-label="Instagram">
-            <svg viewBox="0 0 64 64" aria-hidden="true" role="img">
-              <rect x="0" y="0" width="64" height="64" rx="18" fill="url(#igBg)"/>
-              <rect x="16" y="16" width="32" height="32" rx="9" fill="none" stroke="white" stroke-width="3.2"/>
-              <circle cx="32" cy="32" r="7.5" fill="none" stroke="white" stroke-width="3.2"/>
-              <circle cx="42.8" cy="21.7" r="2.4" fill="white"/>
-              <defs>
-                <linearGradient id="igBg" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0%" stop-color="#feda75"/>
-                  <stop offset="30%" stop-color="#f58529"/>
-                  <stop offset="60%" stop-color="#dd2a7b"/>
-                  <stop offset="100%" stop-color="#4f5bd5"/>
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-          <div class="card-copy">
-            <h3>Instagram</h3>
-            <p>@ritsuko_8837</p>
-          </div>
-        </a>
-
         <a class="link-card note" href="https://note.com/ritsuko_m" target="_blank" rel="noopener noreferrer">
-          <div class="card-icon" aria-label="note">
-            <svg viewBox="0 0 64 64" aria-hidden="true" role="img">
-              <rect x="0" y="0" width="64" height="64" rx="18" fill="#111111"/>
-              <path d="M18 20.5h28v6.4H18v-6.4Zm0 10.2h20.5v6.4H18v-6.4Zm0 10.2h28v6.4H18v-6.4Z" fill="white"/>
-              <path d="M40.5 17.5h7.2v29.5h-7.2V17.5Z" fill="white"/>
-            </svg>
-          </div>
+          <img class="logo" src="assets/images/note-logo.svg" alt="note" width="56" height="56">
           <div class="card-copy">
             <h3>note</h3>
             <p>note.com/ritsuko_m</p>
+          </div>
+        </a>
+
+        <a class="link-card instagram" href="https://www.instagram.com/ritsuko_8837/" target="_blank" rel="noopener noreferrer">
+          <img class="logo" src="assets/images/instagram-logo.svg" alt="Instagram" width="56" height="56">
+          <div class="card-copy">
+            <h3>Instagram</h3>
+            <p>@ritsuko_8837</p>
           </div>
         </a>
       </div>
